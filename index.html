@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commune Starter Files Codewell</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="container nav__container">
+        <div class="logo">
+          <img src="./Assets/Logo.svg" alt="" />
+        </div>
+        <ul class="nav__links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Communities</a></li>
+          <li><a href="#" class="button">Join Waitlist</a></li>
+        </ul>
+        <div class="menu">
+          <i class="fa-solid fa-bars bar"></i>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- paragraph section -->
+    <section>
+      <div class="container paragraph__section">
+        <p class="">
+          we are now allowing early-access for users. <a href="#">Learn more</a>
+        </p>
+      </div>
+    </section>
+    <!-- end of paragraph section -->
+
+    <!-- hero section -->
+    <section>
+      <div class="container hero__section">
+        <div class="left__section">
+          <h2>
+            Build a highly engaged <br />
+            community with no effort
+          </h2>
+          <p>
+            commune offers the tools you need to build a highly enraged
+            community with little to no effort. simply setup your commune
+            workspace and manage everything from members to content from one
+            central dashboard
+          </p>
+
+          <div class="input">
+            <input type="text" placeholder="Enter your Email or Phone" />
+            <a href="#" class="btn">Join Waitlist</a>
+          </div>
+        </div>
+        <div class="right__section">
+          <img src="./Assets/Illustration.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- use companies -->
+    <section>
+      <div class="container companies">
+        <p>Used by these companies:</p>
+        <div class="images">
+          <img src="./Assets/Atlassian Icon.svg" alt="" />
+          <img src="./Assets/Behance Icon.svg" alt="" />
+          <img src="./Assets/Bing Icon.svg" alt="" />
+          <img src="./Assets/Bitbucket Icon.svg" alt="" />
+          <img src="./Assets/Dropbox Icon.svg" alt="" />
+          <img src="./Assets/Twitch Icon.svg" alt="" />
+          <img src="./Assets/Twitter Icon.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end use companies -->
+
+    <script>
+      let navbar = document.querySelector('.nav__links')
+      let bar = document.querySelector('.bar')
+      let close = document.querySelector('.close')
+
+      bar.addEventListener('click', () => {
+        navbar.classList.add('show')
+        bar.style.display = 'none'
+        close.style.display = 'flex'
+      })
+      close.addEventListener('click', () => {
+        navbar.classList.remove('show')
+        bar.style.display = 'flex'
+        close.style.display = 'none'
+      })
+    </script>
+  </body>
+</html>
